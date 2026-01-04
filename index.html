@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Garuda Football Academy</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS INTERNAL -->
+    <style>
+      .bg-success {
+        background: rgba(0, 0, 0, 0.35) !important;
+        backdrop-filter: blur(6px);
+      }
+
+      .btn-success {
+        background: linear-gradient(135deg, #1fb66f, #0b8f5d);
+        border: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+
+      .btn-success:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6);
+      }
+
+      #formPendaftaran {
+        background-color: #f4f7f8;
+      }
+
+      .card {
+        border-radius: 16px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      }
+
+      .navbar {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.85),
+          rgba(0, 0, 0, 0.3)
+        );
+        backdrop-filter: blur(6px);
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #1fb66f;
+        transition: width 0.3s;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .navbar .nav-link:hover {
+        text-decoration: underline;
+      }
+
+      .navbar-brand {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        padding: 15px 0;
+      }
+
+      /* HERO */
+      .hero {
+        min-height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+          ),
+          url("assets/img/foto.jpeg");
+
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #4a6925; 
+      }
+
+      .hero span {
+        color: #7c3aed;
+      }
+
+      .hero p {
+        color: #daa5ef;
+      }
+
+      /* FORM */
+      #formPendaftaran {
+        background-color: #e2edeb;
+      }
+
+      .btn-warning:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(31, 182, 111, 0.9);
+      }
+
+      /* FOOTER */
+      footer {
+        font-size: 14px;
+        background-color: #c2244f;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> Garuda Football Academy </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- LEFT -->
+          <div class="col-md-6">
+            <h1>Hello, Kami <br /><span>Garuda Footbal Academy</span></h1>
+            <p class="mt-3">Komunitas Academy yang akan meningkatkan kemampuan para anak anak yang akan menjadi pesepakbola professional.</p>
+            <a
+          href="about.html" class="btn btn-warning btn-lg mt-4">
+          About
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-success text-white text-center py-3">
+      <p class="mb-0">© 2026 | Dibuat oleh Ilyas Sunandar</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

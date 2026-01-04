@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kontak | Garuda Football Academy</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* HERO */
+      .contact-hero {
+        height: 55vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+          url("https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+
+      /* CONTACT CARD */
+      .contact-card {
+        background: white;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .icon {
+        font-size: 42px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Garuda FA</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="contact-hero text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Contact Us</h1>
+        <p class="lead mt-3">Terhubung dengan Garuda Football Academy</p>
+      </div>
+    </section>
+
+    <!-- CONTACT INFO -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Hubungi Kami</h2>
+          <p class="text-muted mt-2">
+            Kami siap melayani informasi pendaftaran, program, dan kerja sama
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- ALAMAT -->
+          <div class="col-md-4">
+            <div class="contact-card text-center">
+              <div class="icon mb-3">📍</div>
+              <h5 class="fw-bold">Alamat</h5>
+              <p class="mt-2">
+                Jl. Dalan No. 10<br />
+                Indonesia
+              </p>
+            </div>
+          </div>
+
+          <!-- TELEPON -->
+          <div class="col-md-4">
+            <div class="contact-card text-center">
+              <div class="icon mb-3">📞</div>
+              <h5 class="fw-bold">Telepon / WhatsApp</h5>
+              <p class="mt-2">+62 812-3456-9876</p>
+              <a
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                class="btn btn-success mt-3"
+              >
+                Chat WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="col-md-4">
+            <div class="contact-card text-center">
+              <div class="icon mb-3">✉️</div>
+              <h5 class="fw-bold">Email</h5>
+              <p class="mt-2">info@garudafa.com</p>
+              <a
+                href="mailto:info@garudafa.com"
+                class="btn btn-outline-dark mt-3"
+              >
+                Kirim Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPS -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Lokasi Kami</h2>
+          <p class="text-muted">Kunjungi Garuda Football Academy</p>
+        </div>
+
+        <div class="rounded overflow-hidden shadow">
+          <iframe
+            src="https://www.google.com/maps?q=Mandala+Krida+Stadium,+Yogyakarta&output=embed"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+      © 2026 Garuda Football Academy
+    </footer>
+  </body>
+</html>

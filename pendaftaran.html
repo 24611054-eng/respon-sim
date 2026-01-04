@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pendaftaran | Garuda Football Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        padding-top: 70px;
+        background: #f4f6f9;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      }
+
+      /* HEADER */
+      .page-header {
+        height: 320px;
+        background: url("https://images.unsplash.com/photo-1521412644187-c49fa049e84d")
+          center/cover no-repeat;
+        position: relative;
+      }
+
+      .page-header::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      .page-header-content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      .page-header h1 {
+        font-size: 42px;
+        font-weight: 700;
+      }
+
+      /* FORM */
+      .form-box {
+        max-width: 600px;
+        margin: -60px auto 50px;
+        background: #fff;
+        padding: 35px;
+        border-radius: 16px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .form-box h3 {
+        font-weight: 600;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+
+      .form-label {
+        font-weight: 500;
+      }
+
+      /* BUTTON */
+      .btn-submit {
+        background: linear-gradient(135deg, #1cb5e0, #000851);
+        color: #fff;
+        padding: 12px;
+        border-radius: 30px;
+        font-weight: 600;
+        border: none;
+      }
+
+      .btn-submit:hover {
+        opacity: 0.9;
+      }
+
+      /* FOOTER */
+      footer {
+        background: #111;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Garuda FA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="page-header">
+      <div class="page-header-content">
+        <h1>Pendaftaran</h1>
+        <p>Garuda Football Academy</p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="container">
+      <div class="form-box">
+        <h3>Formulir Pendaftaran</h3>
+
+        <form id="Pendaftaran">
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" name="nama" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Usia</label>
+            <input type="number" class="form-control" name="usia" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Posisi Bermain</label>
+            <select class="form-select" name="posisi" required>
+              <option value="">Pilih posisi</option>
+              <option>Penjaga Gawang</option>
+              <option>Bek</option>
+              <option>Gelandang</option>
+              <option>Penyerang</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">No WhatsApp</label>
+            <input type="tel" class="form-control" name="whatsapp" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Alamat</label>
+            <textarea class="form-control" name="alamat" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit w-100">
+            Daftar Sekarang
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Garuda Football Academy</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script>
+      const form = document.getElementById("Pendaftaran");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch(
+          "https://script.google.com/macros/s/AKfycbzIA6TfYHKujYU5or-IhLAGcOUcBn01BiAb-uHSOp_RHqYjXzz9wa5zJlsQXxawsGkw6w/exec",
+          {
+            method: "POST",
+            body: formData,
+          }
+        )
+          .then((res) => res.text())
+          .then((text) => {
+            if (text === "success") {
+              alert("Pendaftaran berhasil!");
+              form.reset();
+            } else {
+              alert("Gagal menyimpan data");
+              console.log(text);
+            }
+          })
+          .catch((err) => {
+            alert("Terjadi error");
+            console.error(err);
+          });
+      });
+    </script>
+  </body>
+</html>

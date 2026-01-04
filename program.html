@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Program | Garuda Football Academy</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .program-card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        height: 100%;
+      }
+
+      .program-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(47, 131, 196, 0.5);
+      }
+
+      .program-icon {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: #95af35;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="about.html">
+          Garuda Football Academy
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROGRAM SECTION -->
+    <section class="py-5 bg-light" style="margin-top: 90px">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-2">Program Kami</h2>
+        <p class="text-center text-muted mb-5">
+          Program pembinaan berjenjang untuk mencetak pemain sepak bola
+          profesional
+        </p>
+
+        <div class="row g-4">
+          <!-- USIA DINI -->
+          <div class="col-md-4">
+            <div class="program-card text-center">
+              <div class="program-icon">⚽</div>
+              <span class="badge bg-success mb-3">Usia 6–10 Tahun</span>
+              <h5>Program Usia Dini</h5>
+              <p>
+                Program Usia Dini dirancang untuk mengenalkan anak-anak pada
+                dasar-dasar sepak bola sejak usia muda. Fokus utama program ini
+                adalah pengembangan koordinasi tubuh, teknik dasar, serta
+                pembentukan karakter seperti disiplin, kerja sama, dan
+                sportivitas.
+              </p>
+            </div>
+          </div>
+
+          <!-- REMAJA -->
+          <div class="col-md-4">
+            <div class="program-card text-center">
+              <div class="program-icon">🏃‍♂️</div>
+              <span class="badge bg-success mb-3">Usia 11-15 Tahun</span>
+              <h5>Pembinaan Remaja</h5>
+              <p>
+                Pada tahap ini, pemain mulai diarahkan pada latihan yang lebih
+                terstruktur untuk mempersiapkan diri menghadapi kompetisi.
+                Selain itu, pembinaan mental dan kedisiplinan menjadi bagian
+                penting dalam membentuk pemain yang tangguh dan bertanggung
+                jawab.
+              </p>
+            </div>
+          </div>
+
+          <!-- ELITE -->
+          <div class="col-md-4">
+            <div class="program-card text-center">
+              <div class="program-icon">🏆</div>
+              <span class="badge bg-success mb-3">Usia 16-22 Tahun</span>
+              <h5>Program Elite</h5>
+              <p>
+               Program Elite merupakan tahap pembinaan lanjutan bagi pemain berbakat
+                yang memiliki potensi untuk bermain di level profesional.
+                Program ini mencakup latihan intensif, analisis performa, serta
+                simulasi pertandingan kompetitif. Pemain juga dibekali dengan
+                pembinaan mental, nutrisi, dan kesiapan karier untuk menghadapi
+                jenjang sepak bola yang lebih tinggi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+      © 2026 Garuda Football Academy
+    </footer>
+
+    <!-- Bootstrap JS (WAJIB) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

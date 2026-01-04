@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Partners | Garuda Football Academy</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* HERO */
+      .hero {
+        height: 60vh;
+        background: url("assets/img/partners.jpeg") center/cover no-repeat;
+        position: relative;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ZIG ZAG */
+      .partner-box {
+        padding: 50px;
+        border-radius: 20px;
+        background: #f8f9fa;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .partner-icon {
+        font-size: 60px;
+      }
+
+      /* IMPACT */
+      .impact {
+        background: linear-gradient(135deg, #38607b, #0f62f3);
+        color: white;
+      }
+
+      .impact h2 {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Garuda FA</a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fasilitas.html">Fasilitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero text-center">
+      <div class="container hero-content">
+        <h1 class="display-4 fw-bold">Our Partners</h1>
+        <p class="lead mt-3">
+          Bersama mitra terpercaya membangun atlet masa depan
+        </p>
+      </div>
+    </section>
+
+    <!-- PARTNER ZIG ZAG -->
+    <section class="py-5">
+      <div class="container">
+        <!-- ITEM 1 -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <div class="partner-box">
+              <div class="partner-icon">⚽</div>
+              <h3 class="mt-3">Klub Sepak Bola</h3>
+              <p>
+                Menjadi jalur pembinaan lanjutan dan kompetisi resmi bagi atlet
+                Garuda Football Academy.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="assets/img/klub.jpeg" class="img-fluid rounded-4" />
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+          <div class="col-md-6">
+            <div class="partner-box">
+              <div class="partner-icon">🏫</div>
+              <h3 class="mt-3">Institusi Pendidikan</h3>
+              <p>
+                Mendukung keseimbangan akademik dan pengembangan karakter atlet
+                muda.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f"
+              class="img-fluid rounded-4"
+            />
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="partner-box">
+              <div class="partner-icon">🏥</div>
+              <h3 class="mt-3">Sport Science & Medis</h3>
+              <p>
+                Menjamin kesehatan, kebugaran, dan performa atlet secara
+                berkelanjutan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="assets/img/rumahsakit.jpeg"
+              class="img-fluid rounded-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="impact py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>20+</h2>
+            <p>Partner Aktif</p>
+          </div>
+          <div class="col-md-4">
+            <h2>500+</h2>
+            <p>Atlet Dibina</p>
+          </div>
+          <div class="col-md-4">
+            <h2>10 Tahun</h2>
+            <p>Pengalaman Pembinaan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <h2 class="fw-bold">Tertarik Menjadi Partner?</h2>
+        <p class="mt-2">
+          Mari berkolaborasi membangun masa depan sepak bola Indonesia
+        </p>
+        <a href="kontak.html" class="btn btn-success btn-lg mt-3"
+          >Hubungi Kami</a
+        >
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      © 2026 Garuda Football Academy
+    </footer>
+  </body>
+</html>
